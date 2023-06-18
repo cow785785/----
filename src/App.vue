@@ -1,11 +1,21 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
+import HeaderAndFooter from "./components/HeaderAndFooter.vue";
+
+export default {
+  components: {
+    HeaderAndFooter,
+  },
+};
 </script>
 
 <template>
-  <header></header>
-
+  <HeaderAndFooter></HeaderAndFooter>
   <RouterView />
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+template {
+  height: 100vh;
+}
+</style>
